@@ -11,7 +11,6 @@ int main()
 	// 포인터 0이 필요하면 "nullptr" 사용하세요
 	foo(0);
 	foo(nullptr);
-
 	goo(nullptr);
 
 	// 가독성도 좋습니다.
@@ -20,4 +19,6 @@ int main()
 	if (ret == 0) {}		// ret 가 정수일까요 ? 포인터 일까요 ?
 	if (ret == nullptr) {}	// ret 는 포인터라는 것을 알수 있습니다.
 
+
+//	int* p = nullptr; // 이것만 알아 두세요.
 }
