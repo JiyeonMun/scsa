@@ -47,8 +47,8 @@ int main()
 	//    square(s);
 	//    square(n);
 
-		// 타입을 전달하면 함수 인자로
-		// 추론하지 않고 전달된 타입사용
+	// 타입을 전달하면 함수 인자로
+	// 추론하지 않고 전달된 타입사용
 	square<int>(c);
 	square<int>(s);
 	square<int>(n);
