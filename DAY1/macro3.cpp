@@ -11,4 +11,5 @@ int main()
 	int n3 = add3(1, 2); // add3 함수로 이동(치환 아님)
 }
 
-// cl macro3.cpp /EP
+// 1. cl macro3.cpp /EP   로 전처리 제거후 코드 확인하세요
+// 2. godbolt.org 에서 add2(1,2) 와 add3(1,2) 의 기계어 코드 보세요.
