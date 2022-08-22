@@ -17,7 +17,9 @@ int main()
 //	for (int n : x)
 	for (auto n : x)
 	{
-		std::cout << n << std::endl;
+//		std::cout << n << std::endl;
+		std::cout << n << ", ";
+							// std::endl 이 "\n" 출력입니다.
 		// 여기서 x의 요소를 제거하면??
 	}
 }
