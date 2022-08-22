@@ -18,7 +18,8 @@ double square(double a)
 
 // 아래 코드는 함수를 찍어내는 "틀" 입니다.
 // 컴파일러가 아래 틀을 사용해서 함수를 생성합니다.
-template<typename T>
+//template<typename T>
+template<class T>		// "typename" 대신 "class" 사용해도 됩니다.
 T square(T a)
 {
 	return a * a;
