@@ -24,4 +24,8 @@ int main()
 		std::cout << e << ", ";
 	}
 }
+// 오늘의 핵심 5개 : reference, private, public, 생성자, 소멸자
+
+강사님 stl의 vector도 안에 배열 형식으로 데이터를 저장하나요 ?
+파이썬에서 리스트와 비슷하다고 생각하면 될까요 ?
 
