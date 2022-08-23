@@ -38,12 +38,17 @@ int main()
 		}	// <= p1 파괴, 소멸자 호출
 
 		
-		std::cout << "2st block end" << std::endl;
+		std::cout << "2nd block end" << std::endl;
 
 	}	// <= p2 파괴 소멸자 호출
 
 	std::cout << "main 종료" << std::endl;
 } 
 
+// 정리
+// 생성자(constructor) : 객체를 생성할때 자동으로 호출, 객체를 초기화하기 위해 사용
+// 소멸자(destructor)  : 객체가 파괴 될때 자동으로 호출.
 
-
+// 그런데, 소멸자는 왜?? 필요 한가요 ?
+// => 필요 없으면 만들지 마세요
+// => 필요 할때만 만들면 됩니다(Vector 예제)
