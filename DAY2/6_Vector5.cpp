@@ -10,7 +10,7 @@ public:
 	Vector(int size)
 	{
 		sz = size;
-		ptr = new int[sz]
+		ptr = new int[sz];
 	}
 	// 위 처럼 생성자에서 메모리 할당하는 코드 가 있을때는 
 	// 대부분 소멸자를 만들어서 메모리 해지를 하게 됩니다.
