@@ -30,10 +30,10 @@ int main()
 {
 	Rect rc = { 1,1,10,10 };
 
-//	int n1 = getRectArea(rc);
+//	int n1 = getRectArea(rc);	// C 스타일
 //	drawRect(rc);
 
-	int n1 = rc.getArea();
+	int n1 = rc.getArea();		// C++(객체지향) 스타일
 	rc.draw();
 }
 
