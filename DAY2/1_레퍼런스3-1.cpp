@@ -29,3 +29,16 @@ void inc2(int& r) { ++r; }
 
 void f1(int n) {}
 void f2(const Rect& n) {}
+
+// 구글에서 "C++ Core GuideLine " 검색 하세요
+// => 1번째 링크 클릭
+// => "C++ 창시자"가 C++로 코딩할때는 꼭 "이 규칙을 지켜라"
+//    라고 설명하는 500여개의 규칙
+
+
+/*
+void f1(const string& s);  // OK: pass by reference to const; always cheap
+void f2(string s);         // bad: potentially expensive
+void f3(int x);            // OK: Unbeatable
+void f4(const int& x);     // bad: overhead on access in f4()
+*/
