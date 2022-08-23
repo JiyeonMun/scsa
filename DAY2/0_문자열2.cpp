@@ -1,6 +1,9 @@
 // 26 page
 #include <iostream>
+#include <cstring>  // C 언어의 "string.h" 의 C++ 버전, 
+					// => 문자열 함수(strcpy등) 제공
 #include <string>   // C++ 문자열 타입을 위한 헤더.
+					// => "std::string"
 
 int main()
 {
@@ -19,5 +22,8 @@ int main()
 	if (s1 == s2) {} // 비교 가능. false
 
 	std::cout << s1 << std::endl; // "efghefgh"
+
+	// 혹시 문자열 길이는 어떻게 구하나요 ? 라이브러리가 따로 있나요 ?
+	int n1 = s1.size(); // 멤버 함수라는 개념입니다. 오늘 배우는 주제
 }
 
