@@ -32,7 +32,7 @@ int main()
 
 			// 기존 버퍼(4개짜리 배열)의 내용을
 			// 새로운 버퍼(배열)에 복사
-			memcpy(tmp, score, sizeof(int) * 4);
+			memcpy(tmp, score, sizeof(int) * size );
 
 			// 기존 버퍼 제거
 			delete[] score;
