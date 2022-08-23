@@ -18,6 +18,6 @@ int main()
 
 	if (s1 == s2) {} // 비교 가능. false
 
-	std::cout << s1 << std::end; // "efghefgh"
+	std::cout << s1 << std::endl; // "efghefgh"
 }
 
