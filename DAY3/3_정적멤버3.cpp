@@ -19,18 +19,15 @@ public:
 int Car::cnt = 0; // 초기값은 여기에서..
 
 
-
-
-
-
 int main()
 {
+	// 핵심 1. static member data 는 "객체를 생성하지 않아도"
+	//        메모리에 생성됩니다.
+	//		 "클래스이름::멤버이름" 으로 접근 가능합니다.
+	std::cout << Car::cnt << std::endl; // 0
+
 	Car c1;
 	Car c2;
 
-	std::cout << cnt << std::endl; // 2
-
-	// 그런데, 전역변수는 항상 안전하지 않습니다.
-	cnt = 100; // 사용자가 실수 했다.(오타등)
 }
 
