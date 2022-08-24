@@ -27,7 +27,6 @@ public:
 
 void foo(const Rect& r) // C++에서 최선의 코드..
 {
-
 	int n = r.getArea();
 }
 
