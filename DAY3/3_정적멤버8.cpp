@@ -35,4 +35,7 @@ int Car::cnt;
 int main()
 {
 	Car::goo(); // 객체가 없어도 goo는 호출가능
+
+	Car c;
+	c.goo();
 }
