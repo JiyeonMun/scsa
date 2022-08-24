@@ -2,16 +2,28 @@
 // 1. 프로그램에서 필요한 타입을 먼저 설계하는 것
 
 // 2. "안전하고", "사용하고 쉬운" 타입을 만들기 위한 다양한 문법 제공
+
 // => private, public
 // => 생성자, 소멸자
-// => 초기화 리스트
-// => 정적 멤버 ( static member )
+
+// => 초기화 리스트  => C++만의 특징    : x(a), y(b) {}
+
+// => 정적 멤버 ( static member ) 
+//    static member data
+//    static member function
+//    => "static 멤버 함수에서는 static 멤버만 접근 가능"
+
 // => 상수 멤버 함수
 // => this
+
 // => 상속 등
 
 // 3. 프로그램을 작성할때 필요한 다양한 타입을 C++ 표준에서 제공(class 문법으로 만든것)
 //    => std::string, std::vector 등
+
+
+
+
 
 // char, short, int, long   float, double,  float
 // => struct 나 class 라는 문법으로 만든 타입이 아닙니다.
