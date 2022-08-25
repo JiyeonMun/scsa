@@ -11,22 +11,23 @@
 //        반드시 그 특징은 기반 클래스에도 있어야 합니다.
 //        문법적인 규칙이 아닌, "디자인 측면" 에서
 
+// 핵심 4. 기반 클래스 가진 함수 중에서 파생 클래스가 재정의 하게 되는것이 있다면
+//        반드시 가상함수로 해야 합니다.
+
 class Shape
 {
 public:
-	void draw() { std::cout << "draw Shape" << std::endl; }
+	virtual void draw() { std::cout << "draw Shape" << std::endl; }
 };
-
 class Rect : public Shape
 {
 public:
-	void draw() { std::cout << "draw Rect" << std::endl; }
+	void draw() override { std::cout << "draw Rect" << std::endl; }
 };
-
 class Circle : public Shape
 {
 public:
-	void draw() { std::cout << "draw Circle" << std::endl; }
+	void draw()  override { std::cout << "draw Circle" << std::endl; }
 };
 
 int main()
