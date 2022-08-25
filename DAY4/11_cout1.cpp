@@ -9,6 +9,9 @@ namespace std
 	public:
 		// 아래 3개뿐 아니라 모든 기본 타입에 대해서
 		// operator<<() 함수가 모두 있습니다.
+		// 주의 : 실제 출력은 printf()가 아니라, 각 OS가 제공하는
+		//       내부함수("시스템콜" 이라고 합니다.) 사용
+		// windows : WriteConsole(), linux : write()
 		void operator<<(int n)    { printf("%d", n); }
 		void operator<<(double d) { printf("%lf", d); }
 		void operator<<(const char* s) { printf("%s", s); }
