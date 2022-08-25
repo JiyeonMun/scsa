@@ -8,8 +8,7 @@ int main()
 
 	// 1. C 스타일
 	char* p1 = (char*)&c; // ok
-
-
+	
 	// 2. C++ 스타일
 //	char* p2 = static_cast<char*>(&c); // error.
 
