@@ -4,13 +4,21 @@
 
 // 핵심 1. 각 도형을 타입으로 설계하면 편리합니다.
 
-class Rect
+// 핵심 2. 모든 도형의 공통의 기반 클래스가 있다면 
+//        모든 도형을 하나의 컨테이너에 묶어서 보관할수있다.
+
+class Shape
+{
+
+};
+
+class Rect : public Shape
 {
 public:
 	void draw() { std::cout << "draw Rect" << std::endl; }
 };
 
-class Circle
+class Circle : public Shape
 {
 public:
 	void draw() { std::cout << "draw Circle" << std::endl; }
@@ -18,7 +26,7 @@ public:
 
 int main()
 {
-	std::vector<Rect*> v;
+	std::vector<Shape*> v;
 
 	int cmd;
 	while (1)
