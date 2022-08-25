@@ -24,6 +24,11 @@ public:
 
 	Student(const std::string& s, int a, int n) 
 				: Person(s, a), id(n) {}
+
+	// 아래 코드는 name, age 가 private 이라서 안됩니다.
+//	Student(const std::string& s, int a, int n)
+//		: name(s), age(a), id(n) {}
+
 };
 
 int main()
