@@ -19,6 +19,7 @@ public:
 	// => 이현상이 C++에서 아주 많은 버그의 원인이 되었습니다.
 	virtual void clone() {};  // error 아님
 
+
 	// 핵심 3. 그래서, C++11에서 "override" 키워드가 도입되었습니다.
 	virtual void move() override {}; // error
 };
